@@ -11,9 +11,5 @@ hello:
    .byte 0
 
 start:
-   lda #<hello
-   sta $fb
-   lda #>hello
-   sta $fc
-   jsr print_string
+   PRINT(hello)
    rts
